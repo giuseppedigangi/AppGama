@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="CENTER" maxHeight="800.0" maxWidth="1400.0" minHeight="800.0" minWidth="1400.0" prefHeight="800.0" prefWidth="1400.0" style="-fx-background-color: #f8e2e2;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.79998779296875" minWidth="0.0" prefWidth="0.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="690.0" minWidth="10.0" prefWidth="144.4000244140625" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1355.6000122070313" minWidth="10.0" prefWidth="1255.5999755859375" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="94.39999389648438" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="93.0" minHeight="10.0" prefHeight="56.99997558593748" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <ImageView fx:id="logo" fitHeight="139.0" fitWidth="145.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <image>
+            <Image url="@../../../image/GAMA1.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="appBanner" contentDisplay="CENTER" prefHeight="95.0" prefWidth="1330.0" style="-fx-background-color: #5ce1e6;" text="                          Hospital Management System" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <Text fx:id="infoBanner" strokeType="OUTSIDE" strokeWidth="0.0" text="INFO UTILI: Numero Verde-&gt; 32856976798  GamaHospital.inc" wrappingWidth="628.2699851989746" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <AnchorPane prefHeight="610.0" prefWidth="1126.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <children>
+            <ButtonBar layoutX="287.0" layoutY="81.0" prefHeight="400.0" prefWidth="642.0">
+              <buttons>
+                <Button fx:id="buttonCompletaPrenotazione" alignment="CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#clickCompletaPrenotazione" prefHeight="400.0" prefWidth="300.0" text="Completa Prenotazione" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../image/policy.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="buttonAnnullPrenotazione" contentDisplay="BOTTOM" layoutX="485.0" layoutY="10.0" mnemonicParsing="false" onAction="#clickAnnullPrenotazione" prefHeight="400.0" prefWidth="330.0" text="Annulla Prenotazione">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../image/annulla.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+              </buttons>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ButtonBar>
+            <Button fx:id="buttonIndietro" layoutX="45.0" layoutY="46.0" mnemonicParsing="false" onAction="#clickIndietroP" style="-fx-background-radius: 50px;" text="Indietro" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="109.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../image/back.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="buttonLogout" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#logout" style="-fx-background-color: linear-gradient(to right, #eecda3, #ef629f); -fx-background-radius: 15px;" text="LOGOUT" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <font>
+            <Font name="DejaVu Sans Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <GridPane.margin>
+            <Insets right="50.0" />
+         </GridPane.margin>
+      </Button>
+   </children>
+</GridPane>

@@ -1,0 +1,1 @@
+ -buttonLogout 	linear-gradient(to right, #eecda3, #ef629f)
